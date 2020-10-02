@@ -45,21 +45,19 @@ body {
 }
 
 /* -------------------- nav -------------------- */
-
 #nav ul li a {
    border-left: 1px solid white;
 }
-
 #nav {
 	width: 100%;
 }
 #nav ul {
+	display: flex;
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
 }
 #nav ul li {
-	float: left;
 	width: 20%;
 	text-align: center;
 }
@@ -73,6 +71,7 @@ body {
 	text-decoration: none;
 	background-color: green;
 }
+
 #nav ul li a:hover {
 	filter: drop-shadow(10px 10px 10px black);
 }
@@ -84,11 +83,12 @@ body {
 	padding: auto;
 	padding-top: 20px;
 	clear: both;
+	display: grid;
+	grid-template-columns: 70vw 30vw;
 }
 /* -------------------- main -------------------- */
 #main {
-	float: left;
-	width: 60%;
+	width: 95%;
 	padding: 10px 30px 10px 10px;
 }
 #main h2 {
@@ -137,8 +137,7 @@ body {
 
 /* -------------------- side -------------------- */
 #side {
-	float: right;
-	width: 30%;
+	width: 85%;
 	padding: 20px;
 	background-color: #F99;
 }
